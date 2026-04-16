@@ -1,0 +1,43 @@
+---
+format:
+  gfm:
+    default-image-extension: ""
+---
+
+<!-- README.md is generated from README.qmd. Please edit that file -->
+
+```{r}
+#| include: false
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# SpatialData.validate
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+SpatialData.validate provides schemas and a convenience function (`spdata_validate()`) to validate SpatialData objects.
+
+## Installation
+
+You can install the development version of SpatialData.validate like so:
+
+``` r
+# install.packages("pak")
+pak::pak("Huber-group-EMBL/SpatialData.validate")
+```
+
+## Example
+
+```{r, error = TRUE}
+#| label: example
+library(SpatialData.validate)
+spdata_validate(
+  system.file("extdata", "spatialdata-v0.5", "zarr-v3", package = "SpatialData.validate")
+)
+```

@@ -1,0 +1,14 @@
+Package: SpatialData.validate
+Title: 'SpatialData' Validation Tools
+Version: 0.0.0.9000
+Authors@R: 
+    person("Hugo", "Gruson", , "hugo.gruson@embl.de", role = c("aut", "cre"))
+Description: Tools for validating spatial data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports: 
+    jsonlite,
+    jsonvalidate,
+    Rarr
