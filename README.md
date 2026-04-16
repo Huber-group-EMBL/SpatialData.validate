@@ -6,6 +6,7 @@
 
 <!-- badges: start -->
 
+[![R-CMD-check](https://github.com/Huber-group-EMBL/SpatialData.validate/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Huber-group-EMBL/SpatialData.validate/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 SpatialData.validate provides schemas and a convenience function
