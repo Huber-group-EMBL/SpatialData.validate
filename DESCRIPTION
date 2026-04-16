@@ -12,4 +12,5 @@ Imports:
     jsonlite,
     jsonvalidate,
     Rarr
-URL: https://huber-group-embl.github.io/SpatialData.validate/
+URL: https://huber-group-embl.github.io/SpatialData.validate/, https://github.com/Huber-group-EMBL/SpatialData.validate
+BugReports: https://github.com/Huber-group-EMBL/SpatialData.validate/issues
