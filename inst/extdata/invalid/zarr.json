@@ -22,7 +22,7 @@
               "path": "0",
               "coordinateTransformations": [
                 {
-                  "type": "scale",
+                  "type": "invalid",
                   "scale": [
                     1.0,
                     1.0,
@@ -62,7 +62,7 @@
           "axes": [
             {
               "name": "c",
-              "type": "channel"
+              "type": "invalid"
             },
             {
               "name": "y",
