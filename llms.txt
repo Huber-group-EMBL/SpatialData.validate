@@ -1,7 +1,8 @@
 # SpatialData.validate
 
 SpatialData.validate provides schemas and a convenience function
-(`spdata_validate()`) to validate SpatialData objects.
+([`spdata_validate()`](https://huber-group-embl.github.io/SpatialData.validate/reference/spdata_validate.md))
+to validate SpatialData objects.
 
 ## Installation
 
@@ -26,5 +27,10 @@ spdata_validate(
 #>  - /ome/omero/channels/2/label (#/$defs/omero/properties/channels/items/properties/label/type): must be string
 ```
 
-# 
+# Package index
+
+## All functions
+
+- [`spdata_validate()`](https://huber-group-embl.github.io/SpatialData.validate/reference/spdata_validate.md)
+  : Validate the images/ component of a spatial data file
 
