@@ -1,3 +1,12 @@
+#' Validate the images/ component of a spatial data file
+#' 
+#' @param path Path to the spatial data file to validate
+#' @param s3_client An optional S3 client
+#' 
+#' @return `TRUE` if the spatial data file is valid, otherwise an error is thrown
+#' 
+#' @export
+#'
 #' @examples
 #' spdata_validate(
 #'   system.file("extdata", "spatialdata-v0.5", "zarr-v3", package = "SpatialData.validate")
