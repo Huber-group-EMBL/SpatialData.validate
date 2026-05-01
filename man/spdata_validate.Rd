@@ -4,7 +4,7 @@
 \alias{spdata_validate}
 \title{Validate the images/ component of a spatial data file}
 \usage{
-spdata_validate(path, s3_client = NULL)
+spdata_validate(path, type = "image", s3_client = NULL)
 }
 \arguments{
 \item{path}{Path to the spatial data file to validate}
@@ -19,6 +19,9 @@ Validate the images/ component of a spatial data file
 }
 \examples{
 spdata_validate(
-  system.file("extdata", "spatialdata-v0.5", "zarr-v3", package = "SpatialData.validate")
+  file.path(
+    system.file("extdata", "spatialdata-v0.2.zarr", package = "SpatialData.validate"),
+    "images/blobs_multiscale_image"
+  )
 )
 }
