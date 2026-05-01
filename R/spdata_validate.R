@@ -8,13 +8,11 @@
 #' 
 #' @export
 #'
-#' @examples
-#' spdata_validate(
-#'   file.path(
-#'     system.file("extdata", "spatialdata-v0.2.zarr", package = "SpatialData.validate"),
-#'     "images/blobs_multiscale_image"
-#'   )
-#' )
+#' @exampless
+#' sd_zip <- system.file("extdata", "spatialdata-v0.2.zarr.zip", package = "SpatialData.validate")
+#' sd <- withr::local_tempfile()
+#' unzip(sd_zip, exdir = sd)
+#' spdata_validate(file.path(sd, "images/blobs_multiscale_image"))
 spdata_validate <- function(path, type = "image", s3_client = NULL) {
   group_attributes <- Rarr::read_zarr_attributes(path, s3_client = s3_client)
   spdata_version <- group_attributes$spatialdata_attrs$version

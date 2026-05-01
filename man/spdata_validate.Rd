@@ -17,11 +17,3 @@ spdata_validate(path, type = "image", s3_client = NULL)
 \description{
 Validate the images/ component of a spatial data file
 }
-\examples{
-spdata_validate(
-  file.path(
-    system.file("extdata", "spatialdata-v0.2.zarr", package = "SpatialData.validate"),
-    "images/blobs_multiscale_image"
-  )
-)
-}
