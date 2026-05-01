@@ -9,6 +9,9 @@
 #'
 #' @examples
 #' spdata_validate(
+#'   system.file("extdata", "spatialdata-v0.1", package = "SpatialData.validate")
+#' )
+#' spdata_validate(
 #'   system.file("extdata", "spatialdata-v0.3", package = "SpatialData.validate")
 #' )
 spdata_validate <- function(path, s3_client = NULL) {
