@@ -1,17 +1,19 @@
 #' Validate the images/ component of a spatial data file
 #' 
 #' @param path Path to the spatial data file to validate
+#' @poaram type SpatialData element type to be validated
 #' @param s3_client An optional S3 client
 #' 
 #' @return `TRUE` if the spatial data file is valid, otherwise an error is thrown
 #' 
 #' @export
 #'
-#' @examples
-#' spdata_validate(
-#'   system.file("extdata", "spatialdata-v0.5", "zarr-v3", package = "SpatialData.validate")
-#' )
-spdata_validate <- function(path, s3_client = NULL) {
+#' @exampless
+#' sd_zip <- system.file("extdata", "spatialdata-v0.2.zarr.zip", package = "SpatialData.validate")
+#' sd <- withr::local_tempfile()
+#' unzip(sd_zip, exdir = sd)
+#' spdata_validate(file.path(sd, "images/blobs_multiscale_image"))
+spdata_validate <- function(path, type = "image", s3_client = NULL) {
   group_attributes <- Rarr::read_zarr_attributes(path, s3_client = s3_client)
   spdata_version <- group_attributes$spatialdata_attrs$version
 
@@ -21,8 +23,8 @@ spdata_validate <- function(path, s3_client = NULL) {
   schema <- system.file(
     "extdata",
     "schemas",
-    spdata_version,
-    "image.schema",
+    paste(type, spdata_version, sep = "-"),
+    paste(type, "schema", sep = "."),
     package = "SpatialData.validate"
   )
 
