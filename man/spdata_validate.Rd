@@ -19,6 +19,9 @@ Validate the images/ component of a spatial data file
 }
 \examples{
 spdata_validate(
-  system.file("extdata", "spatialdata-v0.5", "zarr-v3", package = "SpatialData.validate")
+  system.file("extdata", "spatialdata-v0.1", package = "SpatialData.validate")
+)
+spdata_validate(
+  system.file("extdata", "spatialdata-v0.3", package = "SpatialData.validate")
 )
 }

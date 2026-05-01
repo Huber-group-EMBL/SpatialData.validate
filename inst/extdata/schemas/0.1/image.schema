@@ -86,7 +86,7 @@
                 ]
               },
               "label": {
-                "type": "string"
+                "type": ["string", "integer"]
               },
               "family": {
                 "type": "string"

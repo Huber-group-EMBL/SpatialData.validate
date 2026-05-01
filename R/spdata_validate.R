@@ -9,7 +9,10 @@
 #'
 #' @examples
 #' spdata_validate(
-#'   system.file("extdata", "spatialdata-v0.5", "zarr-v3", package = "SpatialData.validate")
+#'   system.file("extdata", "spatialdata-v0.1", package = "SpatialData.validate")
+#' )
+#' spdata_validate(
+#'   system.file("extdata", "spatialdata-v0.3", package = "SpatialData.validate")
 #' )
 spdata_validate <- function(path, s3_client = NULL) {
   group_attributes <- Rarr::read_zarr_attributes(path, s3_client = s3_client)
